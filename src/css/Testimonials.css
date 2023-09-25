@@ -1,0 +1,48 @@
+/* ==========
+    Typography
+   ==========*/
+
+.testimonials-title{
+    color:#333;
+    font-family: 'Markazi Text', serif;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+/* ==========
+    Layout
+   ==========*/
+.testimonials-background{
+    background-color: #F4CE14;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 590px;
+}
+
+
+.testimonials-ratings{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 905px){
+    .testimonials-title{
+        margin: 1em 0 1em 0;
+    }
+    .testimonials-ratings{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding-bottom: 4em;
+    }
+}
+
+
+

@@ -1,0 +1,30 @@
+.ll-header{
+    font-family: 'Markazi Text', serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #F4CE14
+}
+
+.ll-subtitle{
+    margin-top: -0.5em;
+    font-family: 'Markazi Text', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.ll-about{
+    margin: 1em 0;
+    color: #FFF;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140.625%; /* 2.0215rem */
+}
+
+@media screen and (max-width: 660px) {
+    .ll-about{
+        margin-right: 1em;
+    }
+}

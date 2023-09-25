@@ -1,0 +1,102 @@
+/* ============
+    Typography
+   ============ */
+
+.card-title{
+    font-family: 'Markazi Text', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card-price{
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #EE9972;
+}
+
+.card-description{
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1em 0;
+    color: #495E57;
+}
+
+.card-order-now{
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+
+/* ============
+    assets
+   ============ */
+
+.card-img{
+    border-radius: 16px 16px 0px 0px;
+}
+
+/* ============
+    layout
+   ============ */
+   .card-img{
+    width: 264.667px;
+    height: 186.258px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
+
+
+.card{
+    background-color: #EDEFEE;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1em;
+    width: 264.667px;
+    height: 233.742px;
+}
+
+.card-name-and-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-order-now{
+    margin-top: auto;
+}
+.card-order-now span{
+    padding: 0 0.5em;
+    position: relative;
+    top: 1.75px;
+}
+
+@media screen and (max-width: 905px) {
+    .card{
+        width: 60%;
+    }
+    .card-img{
+        width: 100%;
+        height: 250px;
+    }
+    .card-info{
+        width: 100%;
+        height: auto;
+    }
+    .card-description{
+        padding: 2em 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .card{
+        width: 100%;
+    }
+}

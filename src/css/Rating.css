@@ -1,0 +1,100 @@
+/* ============
+    Typography
+   ============ */
+
+.rating-rating{
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.rating-name{
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.rating-review-txt{
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+
+/* ============
+    Assets
+   ============ */
+
+.rating-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* ============
+    Layout
+   ============ */
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+
+    width: 23%;
+    min-width: 150px;
+
+    box-sizing: border-box;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 16px ;
+}
+
+.rating-rating{
+    margin-left: 0.em;
+    margin-bottom: 1em
+}
+
+.rating-img-and-name{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.rating-review-txt{
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    border-top: 1px solid #333;
+}
+
+@media screen and (max-width: 905px){
+    .rating-rating{
+        margin-bottom: 0;
+    }
+    .img-name-txt-flex{
+        display: flex;
+    }
+    .rating{
+        width: auto;
+        max-width: 450px;
+    }
+    .rating-img-and-name{
+        flex-direction: column;
+        width: auto;
+        margin-right: 0.5em;
+        padding-right: 1.5em;
+        border-right: 1px solid #333;
+
+    }
+    .rating-review-txt{
+        border-top: none;
+        padding-left: 1em;
+        width: 70%;
+    }
+}
+
+
+
+
+

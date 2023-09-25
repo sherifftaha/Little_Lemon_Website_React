@@ -1,0 +1,67 @@
+.footer-background{
+ background-color: #495E57;
+}
+
+/* ==============
+      Typography
+   ============== */
+
+
+
+.footer  a {
+    color:#EDEFEE;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25rem;
+    display: block;
+    margin-bottom: 0.25em;
+}
+.footer-li-header a{
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+
+/*  ==============
+      Layout
+    ============== */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.footer-ul-lists{
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+    width: 76%;
+}
+
+.footer-img{
+    width: 17%;
+}
+
+@media screen and (max-width: 905px){
+    .footer{
+        flex-direction: column;
+        gap: 3em;
+    }
+
+
+    .footer-li-header>a{
+        margin-bottom: 0.5em;
+    }
+
+    .footer-ul-lists{
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5em;
+    }
+
+    .footer-img{
+        width: auto;
+        max-height: 158.500px;
+        }
+}

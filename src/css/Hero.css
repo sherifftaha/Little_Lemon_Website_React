@@ -1,0 +1,92 @@
+/* ==============
+    Typography
+   ============== */
+.hero-header{
+    font-family: 'Markazi Text', serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #F4CE14
+}
+
+.hero-subtitle{
+    margin-top: -0.5em;
+    font-family: 'Markazi Text', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+.hero-about{
+    margin: 1em 0;
+    color: #FFF;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140.625%; /* 2.0215rem */
+}
+
+
+/* ==============
+       assets
+   ============== */
+
+.hero-img img{
+    width: 300px;
+    border-radius: 16px;
+}
+
+/* ==============
+       layout
+   ============== */
+
+.hero-background{
+    background-color: #495E57;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+}
+.hero-txt-and-btn{
+    width: 60%;
+    margin-right: 1em;
+}
+
+
+.hero-img{
+    position: relative;
+    top: 4em;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 660px) {
+    .hero-about{
+        margin-right: 1em;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-txt-and-btn{
+        width: 100%;
+        padding-left: 3em;
+        padding-bottom: 3em;
+        order:2
+    }
+    .hero-img{
+        width: 100%;
+        margin-top: 3.2%;
+        position: static;
+        order: 1;
+    }
+    .hero-img img{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        margin-bottom: 1em;
+        border-radius: 0;
+    }
+}
