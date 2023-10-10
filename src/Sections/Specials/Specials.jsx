@@ -16,7 +16,7 @@ export default function Specials() {
     { img: lemonDessert, title: 'Lemon Dessert', price: '5.00', desc: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.' }
   ])
   return (
-    <div className="specials container">
+    <section className="specials container">
 
       <div className="specials-title-and-btn">
 
@@ -33,6 +33,6 @@ export default function Specials() {
 
       </div>
 
-    </div>
+    </section>
   )
 }

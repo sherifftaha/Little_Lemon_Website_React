@@ -5,16 +5,19 @@ import Specials from '../Sections/Specials'
 import Testimonials from '../Sections/Testimonials'
 import About from '../Sections/About'
 import Footer from '../Sections/Footer'
+import Main from '../components/Main'
 
 export default function Home() {
   return (
     <>
-    <Nav />
-    <Hero />
-    <Specials />
-    <Testimonials />
-    <About />
-    <Footer />
+      <Nav />
+      <Main>
+        <Hero />
+        <Specials />
+        <Testimonials />
+        <About />
+      </Main>
+      <Footer />
     </>
   )
 }

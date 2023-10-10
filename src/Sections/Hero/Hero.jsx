@@ -4,15 +4,14 @@ import '../css/Hero.css'
 import image from '../assets/images/restauranfood.jpg'
 import LittleLemonAbout from '../components/LittleLemonAbout'
 
-export default function Hero() {
+export default function Hero(props) {
   return (
     <div className="hero-background">
-
-      <div className="container hero">
+      <section className="container hero">
 
         <div className="hero-txt-and-btn">
           <LittleLemonAbout about='We are family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.' />
-          <Button href='#' text='Reserve a Table' />
+          <Button href='/booking' text='Reserve a Table' />
 
         </div>
 
@@ -22,7 +21,7 @@ export default function Hero() {
 
         </div>
 
-      </div>
+      </section>
 
     </div>
 

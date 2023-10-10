@@ -21,7 +21,7 @@ export default function Testimonials() {
   return (
     <div className="testimonials-background">
 
-      <div className='testimonials container'>
+      <section className='testimonials container'>
 
         <h1 className='testimonials-title'>Testimonials</h1>
 
@@ -36,7 +36,7 @@ export default function Testimonials() {
 
         </div>
 
-      </div>
+      </section>
     </div>
 
   )

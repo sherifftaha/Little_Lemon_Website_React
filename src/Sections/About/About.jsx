@@ -6,7 +6,7 @@ import img from '../assets/images/aboutImg.png'
 export default function About() {
   return (
 
-    <div className='about-background'>
+    <section className='about-background'>
 
       <div className="about container">
         <LittleLemonAbout classN='about-txt'
@@ -21,6 +21,6 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
 
       </div>
 
-    </div>
+    </section>
   )
 }

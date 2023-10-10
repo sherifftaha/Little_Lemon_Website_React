@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../css/Nav.css'
 import image from '../assets/logos/horizontal yellow.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,28 +8,28 @@ export default function Nav() {
   return (
     <header>
       <nav className='nav container' >
-        <a href="#"><img src={image} alt='Little Lemon Logo' /></a>
+        <Link to="/"><img src={image} alt='Little Lemon Logo' /></Link>
         <input type='checkbox' id='nav-toggle' className='nav-toggle' />
         <label htmlFor="nav-toggle" className='nav-toggle'><FontAwesomeIcon icon={faBars}/></label>
         <div className='navbar-list-container'>
           <ul className='navbar-list'>
             <li className='navbar-list-item'>
-              <a href='#'>Home</a>
+              <Link to='/'>Home</Link>
             </li>
             <li className='navbar-list-item'>
-              <a href='#'>About</a>
+              <Link to='/'>About</Link>
             </li>
             <li className='navbar-list-item'>
-              <a href='#'>Menu</a>
+              <Link to='/'>Menu</Link>
             </li>
             <li className='navbar-list-item'>
-              <a href='#'>Reservations</a>
+              <Link to='/booking'>Reservations</Link>
             </li>
             <li className='navbar-list-item'>
-              <a href='#'>Order Online</a>
+              <Link to='/'>Order Online</Link>
             </li>
             <li className='navbar-list-item'>
-              <a href='#'>Login</a>
+              <Link to='/'>Login</Link>
             </li>
           </ul>
         </div>

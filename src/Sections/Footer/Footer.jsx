@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className='footer-background'>
 
-      <div className='footer container'>
+      <footer className='footer container'>
 
         <img src={img} alt="" className='footer-img' />
 
@@ -37,7 +37,7 @@ export default function Footer() {
 
         </div>
 
-      </div>
+      </footer>
 
     </div>
   )
