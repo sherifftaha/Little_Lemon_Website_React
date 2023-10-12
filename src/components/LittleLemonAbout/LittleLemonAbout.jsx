@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/LittleLemonAbout.css'
+import './LittleLemonAbout.css'
 
 export default function LittleLemonAbout(props) {
     return (

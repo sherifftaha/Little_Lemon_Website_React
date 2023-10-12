@@ -1,6 +1,6 @@
 import React from 'react'
-import img from '../assets/logos/vertical white.png'
-import '../css/Footer.css'
+import img from "../../assets/logos/vertical white.png"
+import './Footer.css'
 export default function Footer() {
   return (
     <div className='footer-background'>

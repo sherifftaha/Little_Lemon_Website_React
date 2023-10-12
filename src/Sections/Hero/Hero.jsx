@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../components/Button'
-import '../css/Hero.css'
-import image from '../assets/images/restauranfood.jpg'
-import LittleLemonAbout from '../components/LittleLemonAbout'
+import Button from '../../components/Button/Button'
+import './Hero.css'
+import image from '../../assets/images/restauranfood.jpg'
+import LittleLemonAbout from '../../components/LittleLemonAbout/LittleLemonAbout'
 
 export default function Hero(props) {
   return (

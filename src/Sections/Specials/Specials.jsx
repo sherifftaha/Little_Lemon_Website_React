@@ -1,11 +1,11 @@
 import React from 'react'
-import Card from '../components/Card'
 import { useState } from 'react'
-import Button from '../components/Button'
-import '../css/Specials.css'
-import greekSalad from '../assets/images/greekSaladNew.jpeg'
-import bruschetta from '../assets/images/BruschettaNew.jpeg'
-import lemonDessert from '../assets/images/lemonDessertNew.jpeg'
+import Card from '../../components/Card/Card'
+import Button from '../../components/Button/Button'
+import './Specials.css'
+import greekSalad from '../../assets/images/greekSaladNew.jpeg'
+import bruschetta from '../../assets/images/BruschettaNew.jpeg'
+import lemonDessert from '../../assets/images/lemonDessertNew.jpeg'
 
 
 

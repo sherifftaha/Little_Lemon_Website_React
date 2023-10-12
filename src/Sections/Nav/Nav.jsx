@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/Nav.css'
-import image from '../assets/logos/horizontal yellow.png'
+import './Nav.css'
+import image from '../../assets/logos/horizontal yellow.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 export default function Nav() {

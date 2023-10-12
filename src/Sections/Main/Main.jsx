@@ -1,28 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState, useReducer } from 'react'
-
+import { fetchAPI, summitAPI } from '../../util/fetch'
 
 
 
 //  i want to pass the props from the parent component to the child component
-const initializeTimes = () => {
-    // fetch the times from the database
-    const date = new Date()
-    const intialTimes = fetchAPI(date);
-    // return the times
-    return intialTimes
+const initializeTimes = (date) => {
+    return fetchAPI(date)
 }
 
-const updateTimes = (state, action) => {
-    switch (action.type) {
-        default:
-            console.log(action.state)
-    }
-}
+
 
 export default function Main(props) {
 
-    const [availableTimes, Dispatch] = useReducer(updateTimes, initializeTimes())
+    const updateTimes = (state, action) => {
+        switch (action.type) {
+            case 'update':
+                return fetchAPI(new Date(action.state))
+            default:
+                return state
+        }
+    }
+    const [availableTimes, Dispatch] = useReducer(updateTimes, initializeTimes(new Date()))
+
     return (
         <main>
             {React.Children.map(props.children, child => {

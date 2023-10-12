@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
-import Rating from '../components/Rating'
-import '../css/Testimonials.css'
-import ahmedImg from '../assets/images/ahmed.jpeg'
-import aliImg from '../assets/images/Ali.jpeg'
-import saadImg from '../assets/images/saad.jpeg'
-import samehImg from '../assets/images/sameh.jpeg'
+import Rating from '../../components/Rating/Rating'
+import './Testimonials.css'
+import ahmedImg from '../../assets/images/ahmed.jpeg'
+import aliImg from '../../assets/images/Ali.jpeg'
+import saadImg from '../../assets/images/saad.jpeg'
+import samehImg from '../../assets/images/sameh.jpeg'
 
 
 

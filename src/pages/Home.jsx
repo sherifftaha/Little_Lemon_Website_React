@@ -1,22 +1,21 @@
 import React from 'react'
-import Nav from '../Sections/Nav'
-import Hero from '../Sections/Hero'
-import Specials from '../Sections/Specials'
-import Testimonials from '../Sections/Testimonials'
-import About from '../Sections/About'
-import Footer from '../Sections/Footer'
-import Main from '../components/Main'
+import Nav from '../Sections/Nav/Nav'
+import Hero from '../Sections/Hero/Hero'
+import Specials from '../Sections/Specials/Specials'
+import Testimonials from '../Sections/Testimonials/Testimonials'
+import About from '../Sections/About/About'
+import Footer from '../Sections/Footer/Footer'
 
 export default function Home() {
   return (
     <>
       <Nav />
-      <Main>
+      <main>
         <Hero />
         <Specials />
         <Testimonials />
         <About />
-      </Main>
+      </main>
       <Footer />
     </>
   )

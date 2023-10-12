@@ -1,7 +1,7 @@
 import React from 'react'
-import '../css/About.css'
-import LittleLemonAbout from '../components/LittleLemonAbout'
-import img from '../assets/images/aboutImg.png'
+import './About.css'
+import LittleLemonAbout from '../../components/LittleLemonAbout/LittleLemonAbout'
+import img from '../../assets/images/aboutImg.png'
 
 export default function About() {
   return (

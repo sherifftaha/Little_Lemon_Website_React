@@ -1,35 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 
 export default function BookingForm(props) {
-    const [form, setForm] = useState({
-        date: "",
-        time: "",
-        guests: "",
-        occasion: ""
-    });
+
+    useEffect(() => {
+        props.Dispatch({ type: 'update', state: props.form.date})
+        // console.log(props.form.date);
+    }
+    , [props.form.date])
 
     return (
         <div className="bookingform">
             <form
                 style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
                 aria-labelledby="booking-form-label"
+                data-testid="booking-form"
+                // onSubmit={props.onSubmit}
             >
 
                 <label htmlFor="res-date">Choose date</label>
                 <input
                     type="date"
                     id="res-date"
-                    onChange={(event) =>
-                        setForm((prevState) => ({ ...prevState, date: event.target.value }))
-                    }
                     aria-labelledby="res-date"
+                    data-testid="date"
+                    value={props.form.date}
+                    onChange={(event) => {
+                        props.setForm((prevState) => {return { ...prevState, date: event.target.value }});
+                    }
+                    }
                 />
+                {/* <h2>{form.date}</h2> */}
 
                 <label htmlFor="res-time">Choose time</label>
                 <select
                     id="res-time"
+                    value={props.form.time}
                     onChange={(event) =>
-                        setForm((prevState) => ({
+                        props.setForm((prevState) => ({
                             ...prevState,
                             time: event.target.value,
                         }))
@@ -38,7 +46,7 @@ export default function BookingForm(props) {
                 >
                     {props.availableTimes.map((time, index) => {
                         return (
-                            <option key={index} value={time}>
+                            <option key={index} value={time} data-testid="time">
                                 {time}
                             </option>
                         );
@@ -52,8 +60,9 @@ export default function BookingForm(props) {
                     min="1"
                     max="10"
                     id="guests"
+                    value={props.form.guests}
                     onChange={(event) =>
-                        setForm((prevState) => ({
+                        props.setForm((prevState) => ({
                             ...prevState,
                             guests: event.target.value,
                         }))
@@ -64,8 +73,9 @@ export default function BookingForm(props) {
                 <label htmlFor="occasion">Occasion</label>
                 <select
                     id="occasion"
+                    value={props.form.occasion}
                     onChange={(event) =>
-                        setForm((prevState) => ({
+                        props.setForm((prevState) => ({
                             ...prevState,
                             occasion: event.target.value,
                         }))
@@ -76,11 +86,6 @@ export default function BookingForm(props) {
                     <option value="Anniversary">Anniversary</option>
                 </select>
 
-                <input
-                    type="submit"
-                    value="Make Your reservation"
-                    aria-labelledby="submit-button"
-                />
             </form>
         </div>
     );

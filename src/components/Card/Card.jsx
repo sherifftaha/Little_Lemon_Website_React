@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Card.css'
+import './Card.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket } from '@fortawesome/free-solid-svg-icons'
 export default function Card(props) {

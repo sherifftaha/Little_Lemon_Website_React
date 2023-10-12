@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Button.css'
+import './Button.css'
 import { Link } from 'react-router-dom'
 export default function Button(props) {
     return (
