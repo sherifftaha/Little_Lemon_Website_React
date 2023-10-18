@@ -1,0 +1,23 @@
+.ReservForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+progress{
+    /* background-color: #495E57;
+
+    */
+}
+
+/* .next-submit{
+    background-color: yellowgreen;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+} */
+.next-submit:hover{
+    cursor: pointer;
+}

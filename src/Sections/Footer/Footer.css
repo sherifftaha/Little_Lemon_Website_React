@@ -15,8 +15,10 @@
     display: block;
     margin-bottom: 0.25em;
 }
-.footer-li-header a{
+.footer-li-header p{
+    color:#EDEFEE;
     font-weight: 800;
+    font-size: 1.3rem;
     margin-bottom: 1em;
 }
 

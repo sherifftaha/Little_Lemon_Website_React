@@ -1,0 +1,20 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 450px;
+}
+
+#res-date{
+    height: 50px;
+}
+
+#res-date:focus:invalid{
+    border: 1px solid red;
+}
+
+#res-time{
+    height: 50px;
+}
