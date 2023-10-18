@@ -1,0 +1,12 @@
+.BookingConfirmation{
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.BookingConfirmation h2{
+    margin-top: 0.7em;
+}
+
+.BookingConfirmation p{
+    font-size: 1.7rem;
+}

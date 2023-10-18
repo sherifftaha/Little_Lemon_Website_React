@@ -1,8 +1,9 @@
 import React from 'react'
+import './BookingConfirmation.css'
 
 function BookingConfirmation({form}) {
   return (
-    <div className='BookingConfirmation'>
+    <div className='BookingForm BookingConfirmation'>
         <h2>Date</h2>
         <p>{form.date}</p>
         <h2>Time</h2>

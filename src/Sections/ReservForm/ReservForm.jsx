@@ -44,33 +44,43 @@ function ReservForm() {
     const title = [
         'Book Now',
         'Confirmation',
+        'Congratulation!'
     ]
+
+
+
+
     return (
         <div className='ReservForm'>
 
-            <progress value={100 / 3 * (page + 1)} max={100}>`${100 / 3 * (page + 1)}%`</progress>
+            <div className='progressBarParent' >
+                <div className='ProgressBarChild' style={{ width: `${100 / 3 * (page + 1)}%` }}></div>
+            </div>
 
-            <h1>{title[page]}</h1>
+            <h1 className='ReservFormTitle'>{title[page]}</h1>
 
             {components[page]}
+            <div className='ReservFormFooter'>
 
-            <button
-                style={{ display: page === 0 ? 'none' : 'inline' }}
-                onClick={() => setPage(page - 1)}
-            >
-                Prev
-            </button>
+                <button
+                    className='PrevBtn btn'
+                    style={{ display: page === 0 ? 'none' : 'inline', }}
+                    onClick={() => setPage(page - 1)}
+                >
+                    Prev
+                </button>
 
-            <button
-                className='next-submit'
-                disabled={page === 0 && form.date === "" ? true : false}
-                data-testid="next-submit"
-                style={{ display: page === 2 ? 'none' : 'inline' }}
-                onClick={() => setPage(page + 1)}
-            >
-                {page == 1 ? 'Submit' : 'Next'}
-            </button>
+                <button
+                    className='next-submitBtn btn'
+                    disabled={(form.date === "" || (form.guests < 1 || form.guests > 10)) ? true : false}
+                    data-testid="next-submit"
+                    style={{ display: page === 2 ? 'none' : 'inline' }}
+                    onClick={() => setPage(page + 1)}
+                >
+                    {page == 1 ? 'Submit' : 'Next'}
+                </button>
 
+            </div>
         </div>
 
     )
