@@ -1,11 +1,17 @@
 /* ================
       Typography
     =============== */
+
 .ReservFormTitle{
     color: #485E58;
     font-family: Markazi Text;
     font-size: 3rem;
     font-weight: 600;
+}
+.FormContainer{
+    color: rgba(72, 94, 88, 0.90);
+    font-family: Markazi Text;
+    font-weight: 500;
 }
 
 .next-submitBtn{
@@ -30,7 +36,7 @@
 
 .progressBarParent{
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     height: 10px;
     background-color: #D9D9D9;
     border-radius: 16px;
@@ -42,6 +48,26 @@
     border-radius: 16px;
     background-color: #485E58;
 }
+
+.ReservFormTitle{
+    margin-bottom: 0.2em;
+}
+
+.FormContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 420px;
+    max-width: 450px;
+    border-radius: 16px;
+    background-color: rgba(251, 218, 187, 0.33);
+    padding: 0.6em 1em ;
+    box-sizing: border-box;
+}
+
+
 
 .ReservFormFooter{
     display: flex;
@@ -57,6 +83,7 @@
     max-width: 450px;
     height: 42px;
     border-radius: 16px;
+    margin-top: 1em;
 }
 
 .next-submitBtn{
@@ -77,7 +104,6 @@
 .PrevBtn{
     background: #fff;
     border: 2px solid #F4CE14 ;
-    margin-bottom: 0.6em;
 }
 
 .PrevBtn:hover{

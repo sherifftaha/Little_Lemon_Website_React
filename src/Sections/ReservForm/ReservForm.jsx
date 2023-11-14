@@ -34,9 +34,16 @@ function ReservForm() {
         occasion: "Birthday"
     });
 
+    const obj = {
+        availableTimes,
+        Dispatch,
+        form,
+        setForm
+    }
+
 
     const components = [
-        <BookingForm availableTimes={availableTimes} Dispatch={Dispatch} form={form} setForm={setForm} />,
+        <BookingForm  {...obj} />,
         <BookingConfirmation form={form} />,
         <BookingSucces />
     ]
@@ -44,7 +51,7 @@ function ReservForm() {
     const title = [
         'Book Now',
         'Confirmation',
-        'Congratulation!'
+        'Congratulation'
     ]
 
 
@@ -59,7 +66,10 @@ function ReservForm() {
 
             <h1 className='ReservFormTitle'>{title[page]}</h1>
 
-            {components[page]}
+            <div className='FormContainer'>
+                {components[page]}
+            </div>
+
             <div className='ReservFormFooter'>
 
                 <button

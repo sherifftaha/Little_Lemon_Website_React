@@ -19,7 +19,7 @@ export default function BookingForm(props) {
 
 
 
-            <label htmlFor="res-date">Choose date</label>
+            <label htmlFor="res-date" id='DateLabel'>Choose date</label>
             <input
                 type="date"
                 id="res-date"

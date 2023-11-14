@@ -3,8 +3,8 @@ import './BookingConfirmation.css'
 
 function BookingConfirmation({form}) {
   return (
-    <div className='BookingForm BookingConfirmation'>
-        <h2>Date</h2>
+    <div className='BookingConfirmation'>
+        <h2 id='BookingConfirmation-DateHeader'>Date</h2>
         <p>{form.date}</p>
         <h2>Time</h2>
         <p>{form.time}</p>
